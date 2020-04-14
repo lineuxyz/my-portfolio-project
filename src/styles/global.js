@@ -14,6 +14,7 @@ export default createGlobalStyle`
   body {
     font: 14px 'Roboto', sans-serif;
     background: #313131;
+    overflow-x: hidden;
     -webkit-font-smoothing: antialiased !important;
   }
   ul {
