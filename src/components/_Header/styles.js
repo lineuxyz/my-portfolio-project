@@ -19,7 +19,16 @@ export const List = styled.ul`
   justify-content: space-between;
   z-index: 1;
 
-  li {
+  a {
     margin: 0 20px;
+
+    &:hover {
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+      transition: 0.2s;
+      color: #F6511D;
+      cursor: pointer;
+    }
   }
 `
