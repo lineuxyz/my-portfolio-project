@@ -6,6 +6,7 @@ import Header from './components/_Header';
 import First from './components/First';
 import Secund from './components/Secund';
 import Three from './components/Three';
+import Four from './components/Four';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <First />
     <Secund />
     <Three />
+    <Four />
     <GlobalStyle />
   </>
   );
