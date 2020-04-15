@@ -8,9 +8,9 @@ export default function Header() {
     <Container>
       <p>Nome</p>
       <List>
-        <li>Meus conhecimentos</li>
-        <li>Projetos</li>
-        <MdBrightness7 size={18} color="#fff" />
+        <a>Meus conhecimentos</a>
+        <a>Projetos</a>
+        <MdBrightness7 size={18} color="#fff"  />
       </List>
     </Container>
   );
