@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {MdAddCircleOutline} from 'react-icons/md'
 
 export const Container = styled.div`
     display: flex;
@@ -31,11 +32,11 @@ export const FirstItem = styled.div `
    font-size: 17px;
    font-weight: bold;
    display: flex;
-   margin: 0 0 30px 0;
-
-   img {
+    
+    img {
        margin-left: 30px;
    }
+
 `
 
 export const SecundItem = styled.div `
@@ -44,11 +45,11 @@ export const SecundItem = styled.div `
    font-size: 17px;
    font-weight: bold;
    display: flex;
-   margin: 0 0 30px 0;
 
    img {
        margin-left: 30px;
    }
+
 `
 
 export const ThreeItem = styled.div `
@@ -57,9 +58,31 @@ export const ThreeItem = styled.div `
    font-size: 17px;
    font-weight: bold;
    display: flex;
-   margin: 0 0 30px 0;
 
    img {
        margin-left: 30px;
    }
+
 `
+
+export const List = styled.ul `
+    display: flex;
+    
+    li {
+        margin: 0 0 30px 0;
+    }
+`
+
+export const LastButton = styled.button`
+    display: flex;
+    width: 182px;
+    height: 33px;
+    margin: 60px 90px;
+    cursor: pointer;
+    background-color: #313131;
+    border: 1px solid #FFC400;
+    color: #fff;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+`;

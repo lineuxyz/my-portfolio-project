@@ -1,32 +1,59 @@
 import React from 'react';
 
-import { Container, Title, FirstItem, SecundItem, ThreeItem, Suport } from './styles';
+import { 
+    Container, 
+    Title, 
+    FirstItem, 
+    SecundItem, 
+    ThreeItem,
+     Suport, 
+     List, 
+     LastButton,
+} from './styles';
+
+import {MdAddCircleOutline} from 'react-icons/md'
 
 import developing from '../../assets/developing.png'
-import more from '../../assets/more.png'
-import min from '../../assets/min.png'
 
 export default function Three() {
   return (
     <Container>
-        <img src={developing} width={345} />
+        <div>
+            <img src={developing} width={345} />
+            <LastButton>Teste</LastButton>
+        </div>
         <Suport>   
             <Title>
                 <p>Conhecimentos</p>
             </Title>
             <FirstItem>
                 <p>Conhecimentos sobre </p>
-                <img src={more} width={22} />
+                <MdAddCircleOutline size={22} color="#FFC400" />
             </FirstItem>
+                <List>
+                    <li>Adobe</li>
+                    <li>Adobe</li>
+                    <li>Adobe</li>
+                </List>
             <SecundItem>
                 <p>Conhecimentos sobre Adobe</p>
-                <img src={min} width={22} />
+                <MdAddCircleOutline size={22} color="#FFC400" />
             </SecundItem>
+                <List>
+                    <li>Adobe</li>
+                    <li>Adobe</li>
+                    <li>Adobe</li>
+                </List>
             <ThreeItem>
                 <p>Formação acadêmica e cursos</p>
-                <img src={more} width={22} />
+                <MdAddCircleOutline size={22} color="#FFC400" />
             </ThreeItem>
-        </Suport>    
+                <List>
+                    <li>Adobe</li>
+                    <li>Adobe</li>
+                    <li>Adobe</li>
+                </List>
+        </Suport>   
     </Container>
   );
 }
