@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     display: flex;
-    justify-content: space-between;
     width: 100%;
     z-index: 0;
 
@@ -13,15 +12,25 @@ export const Container = styled.div`
 
 export const Title = styled.div`
    color: #C1C1C1;
-   text-align: left;
+   text-align: center;
    font-size: 17px;
    font-weight: bold;
    display: flex;
+
 `
 
-export const FirstItem = styled.div``
+export const List = styled.ul`
+    margin: 30px 30px;
 
-export const SecundItem = styled.div``
+    p {
+     color: #C1C1C1;
+     text-align: center;    
+     font-size: 17px;
+     font-weight: bold; 
+    }
 
-export const ThreeItem = styled.div``
+`
+
+
+
 
