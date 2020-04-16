@@ -66,10 +66,10 @@ export const ThreeItem = styled.div `
 `
 
 export const List = styled.ul `
-    display: flex;
-    
+    list-style: circle;
+    margin: 0 0 30px 30px;
+    color: #FFC400;
     li {
-        margin: 0 0 30px 0;
     }
 `
 
