@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Title, FirstItem, SecundItem, ThreeItem } from './styles';
+import { Container, Title, List } from './styles';
 
 import city from '../../assets/city.png'
 
@@ -10,18 +10,20 @@ export default function Four() {
             <div>
                 <img src={city} width={500} />
             </div>
-            <Title>
-                <p>Conhecimentos</p>
-            </Title>
-            <FirstItem>
-                <p>Conhecimentos sobre</p>
-            </FirstItem>
-            <SecundItem>
-                <p>Conhecimentos sobre Adobe</p>
-            </SecundItem>
-            <ThreeItem>
-                <p>Formação acadêmica e cursos</p>
-            </ThreeItem>
+            <div>
+                <Title>
+                    
+                </Title>
+                    <List>
+                    <p>Conhecimentos</p>
+                        <li>Nome da empresa: Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+                    </List>
+                    <List>
+                        <li>Nome da empresa: Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+                    </List>
+            </div>
     </Container>
   );
 }
