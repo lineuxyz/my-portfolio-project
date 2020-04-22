@@ -2,15 +2,53 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     display: flex;
-    margin: 100px 0;
+    margin: 200px 0;
     justify-content: space-between;
     width: 100%;
-    
 
     div {
         width: 50%;
         z-index: 1;
+        max-width: 998px !important;
     }
+
+    @media (max-width: 1000px) {
+
+  }
+    @media (max-width: 850px) {  
+      flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin: 70px 0;
+
+        .avatar-image {
+            width: 180px;
+            height: auto;
+            float: left;
+        }
+
+        .title-text {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        ul li a img {
+            width: 60px;
+        }
+ 
+      p {
+          margin: 0;
+          text-align: center;
+          width: 100%;
+          
+      }
+
+      button {
+          margin: 0 auto;
+          margin-top: 60px;
+      }
+  }
+
 `;
 
 export const FirstText = styled.p`
@@ -26,7 +64,7 @@ export const LastText = styled.p`
 `
 
 export const Icons = styled.ul`
-    margin: 0 30px;
+    margin: 50px 30px;
     cursor: pointer;
     
     li {
@@ -40,6 +78,5 @@ export const Icons = styled.ul`
         }
     }
 
- 
 `
 
