@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import githubIcon from '../assets/github-icon.svg';
 
 export default createGlobalStyle`
   * {
