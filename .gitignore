@@ -23,9 +23,3 @@ yarn-debug.log*
 yarn-error.log*
 
 assets
-src/components/Four/index.js
-src/components/Four/styles.js
-src/components/Secund/index.js
-src/components/Secund/styles.js
-src/components/First/index.js
-src/components/First/styles.js
