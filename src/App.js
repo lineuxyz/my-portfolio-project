@@ -3,19 +3,19 @@ import React from 'react';
 import GlobalStyle from './styles/global';
 
 import Header from './components/_Header';
-import First from './components/First';
-import Secund from './components/Secund';
-import Three from './components/Three';
-import Four from './components/Four';
+import Dashboard from './components/Dashboard';
+import Description from './components/Description';
+import Learning from './components/Learning';
+import Companies from './components/Companies';
 
 function App() {
   return (
   <> 
     <Header />
-    <First />
-    <Secund />
-    <Three />
-    <Four />
+    <Dashboard />
+    <Description />
+    <Learning />
+    <Companies />
     <GlobalStyle />
   </>
   );
