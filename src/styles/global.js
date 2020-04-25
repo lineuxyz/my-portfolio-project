@@ -1,8 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
-import px2vw from '../utils/px2vw';
+import githubIcon from '../assets/github-icon.svg';
 
 export default createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
   * {
     margin: 0;
     padding: 0;
@@ -15,21 +14,34 @@ export default createGlobalStyle`
   html, body, #root {
     height: 100%;
   }
+
   body {
     font: 1.6rem 'Roboto', sans-serif;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased !important;
     background-color: #313131;
   }
+
   ul {
     list-style: none;
   }
 
-  @media (max-width: 850px) {
+  button {
+    cursor: pointer;
+    background:  #FFC400;
+    border: 0;
+    color: #313131;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 870px) {
     html {
       font-size: 50%;
     }
   }
+ 
 
   /*@media (max-width: 850px) {
     html {
