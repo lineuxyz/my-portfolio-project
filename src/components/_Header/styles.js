@@ -8,9 +8,8 @@ export const Container = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
 
-  margin-right: 15px;
+  margin-right: 10px;
 
   div {
     display: flex;
@@ -22,15 +21,7 @@ export const Container = styled.header`
   }
 
   @media (max-width: 530px) {
-      display: none;
-      flex-flow: column nowrap;
-      background-color: #FFC400;
-      position: fixed;
-      top: 0;
-      right: 0;
-      height: 100vh;
-      width: 300px;
-      padding-top: 3.5rem;
+    padding: 0 15px;
   }
 `;
 
@@ -52,7 +43,7 @@ export const List = styled.ul`
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: #6699ff;
+        background-color: #FFC400;
         visibility: hidden;
         -webkit-transform: scaleX(0);
         transform: scaleX(0);
@@ -61,7 +52,7 @@ export const List = styled.ul`
     }
 
     &:hover {
-        color: #6699ff;
+        color: ${shade(0.4, '#fff')};
 
         &::before {
             visibility: visible;
