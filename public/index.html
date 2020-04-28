@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <meta charset="utf-8" />
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,5 +17,15 @@
     <div id="root"></div>
 
     <script src="./bundle.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164865050-1"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-164865050-1');
+</script>
+
   </body>
 </html>

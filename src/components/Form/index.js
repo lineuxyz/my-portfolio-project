@@ -1,11 +1,16 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container, Form } from './styles';
 
-export default function Form() {
+export default function Formularie() {
   return (
     <Container>
-        Hello world
+      <Form>
+        <input />
+        <input />
+
+        <button>ahgwoief</button>
+      </Form>
     </Container>
   );
 }
