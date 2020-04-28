@@ -6,11 +6,11 @@
 
 module.exports = {
     siteMetadata: {
-      title: 'Rocketseat',
-      description: 'Novo blog da Rocketseat',
-      author: '@joaopedro_cc',
-      siteUrl: 'https://joaopedro.cc',
-      disqusShortname: 'blog-do-joao-pedro',
+      title: 'Lineu Pastorelli',
+      description: 'Esse é o portifolio de Lineu!',
+      author: '@lineugrrrrr',
+      siteUrl: 'https://lineupastorelli.com',
+      disqusShortname: 'portifolio-do-lineu',
     },
     plugins: [
       'gatsby-plugin-react-helmet',
