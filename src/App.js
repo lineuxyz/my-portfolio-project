@@ -16,6 +16,7 @@ function App() {
     <Description />
     <Learning />
     <Companies />
+
     <GlobalStyle />
   </>
   );
