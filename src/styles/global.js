@@ -19,7 +19,22 @@ export default createGlobalStyle`
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased !important;
     background-color: #313131;
+
+    ::-webkit-scrollbar {
+    width: 6px;
+    height: 10px;
   }
+ 
+    /* aqui é para personalizar o fundo da barra, aqui estou adicionando a cor padrão de background*/
+    ::-webkit-scrollbar-track {
+    background: #313131;
+  }
+ 
+  /* aqui é a alça da barra, que demonstra a altura que você está na página, aqui estou adicionando a cor padrão do site*/
+    ::-webkit-scrollbar-thumb {
+    background: #FFC400;
+  }
+}
 
   ul {
     list-style: none;
