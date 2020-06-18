@@ -48,7 +48,6 @@
   },
   "devDependencies": {
     "commitizen": "^4.0.4",
-    "cz-conventional-changelog": "^3.1.0",
-    "webpack-cli": "^3.3.11"
+    "cz-conventional-changelog": "^3.1.0"
   }
 }
