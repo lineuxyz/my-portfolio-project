@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { shade } from 'polished';
 
 export const Footer = styled.div`
     display: flex;
@@ -94,7 +95,20 @@ export const Copy = styled.div`
       color: #FFC400;
   }
 
-`
+`;
+
+export const LastButton = styled.button.attrs({
+  type: 'button'
+})`
+  display: flex;
+  padding: 10px 30px;
+  margin: 60px 0 60px 90px;
+  transition: background 0.2s;
+  
+  &:hover {
+      background: ${shade(0.2, '#FFC400')};
+      }
+`;
 
 
 
