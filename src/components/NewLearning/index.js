@@ -21,15 +21,15 @@ export default function Three() {
             <p>My latest projects</p>
             <span>Clicking on the image you will be taken to the repository</span>
             <div className="stream safe-area" > 
-              <a target="_blank" rel="noreferrer" href="https://github.com/lineuxyz/semana-omnistack-11"><img className="stream__thumbnail" src={BeTheHeroLogin} alt="" /></a>
+              <a target="_blank" rel="noreferrer" href="https://bit.ly/3edYGDX"><img className="stream__thumbnail" src={BeTheHeroLogin} alt="" /></a>
             </div>
 
             <div className="stream safe-area" > 
-              <a target="_blank" href="https://github.com/lineuxyz/semana-omnistack-11" rel="noreferrer"><img className="stream__thumbnail" src={BeTheHeroRegister} alt="" /></a>
+              <a target="_blank" href="https://bit.ly/3edYGDX" rel="noreferrer"><img className="stream__thumbnail" src={BeTheHeroRegister} alt="" /></a>
             </div>
 
             <div className="stream" > 
-              <a target="_blank" rel="noreferrer" href="https://github.com/lineuxyz/dev-search"><img className="stream__thumbnail" src={DevSearch} alt="Dev search repo" /></a>
+              <a target="_blank" rel="noreferrer" href="https://bit.ly/38KphXT"><img className="stream__thumbnail" src={DevSearch} alt="Dev search repo" /></a>
             </div>
           </div>
 
