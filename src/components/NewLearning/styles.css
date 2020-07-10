@@ -107,11 +107,17 @@
     margin-bottom: 28px;
   }
 
+  @media (max-width: 1000px) {
+    .footer-container img {
+      width: 440px;
+    }
+  }
+
   @media (max-width: 850px) {
     .content {
       width: 380px;
     }
-    .content img {
+    .stream a img {
       width: 300px;
     }
     .container {
@@ -127,5 +133,14 @@
   @media (max-width: 515px) {
     .footer-container img {
       width: 280px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .content {
+      width: 300px;
+    }
+    .stream a img {
+      width: 270px;
     }
   }
