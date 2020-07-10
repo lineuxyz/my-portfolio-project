@@ -1,0 +1,131 @@
+.container {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 30px;
+
+    margin-bottom: 100px;
+}
+.content {
+    width: 440px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 30px;
+
+    background-color: #FFC400;
+
+    border: 0;
+    border-radius: 10px;
+
+}
+
+.content p {
+    font-size: 20px;
+    color: #393939;
+    margin-bottom: 5px;
+}
+.content span {
+    font-size: 15px;
+    color: #636363;
+    margin-bottom: 10px;
+}
+
+.content a img {
+    width: 400px;
+    height: auto;
+}
+
+.stream {
+    position: relative;
+    display: inline-block;
+    background-color: #612f74;
+
+    -webkit-box-shadow: -11px -3px 26px -7px rgba(0,0,0,0.63);
+    -moz-box-shadow: -11px -3px 26px -7px rgba(0,0,0,0.63);
+    box-shadow: -11px -2px 26px -7px rgba(0,0,0,0.63);
+  }
+  
+    .stream:before,
+    .stream:after {
+      content: '';
+      display: block;
+      background-color: #612f74;
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      transition: all .15s ease;
+    }
+  
+    .stream:before {
+      top: 0;
+      left: 0;
+      transform-origin: top left;
+      transform: rotate(-45deg) scale(0);
+    }
+  
+    .stream:after {
+      right: 0;
+      bottom: 0;
+      transform-origin: bottom right;
+      transform: rotate(45deg) scale(0);
+    }
+  
+    .stream__thumbnail {
+      display: block;
+      transform: translate(0, 0);
+      transition: all .15s ease;
+      position: relative;
+      z-index: 10;
+    }
+  
+  .stream:hover .stream__thumbnail {
+    transform: translate(6px, -6px);
+  }
+  
+  .stream:hover:before {
+    transform: rotate(-45deg) scale(1);
+  }
+  
+  .stream:hover:after {
+    transform: rotate(45deg) scale(1);
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-container img {
+    width: 500px;
+  }
+
+  .safe-area {
+    margin-bottom: 28px;
+  }
+
+  @media (max-width: 850px) {
+    .content {
+      width: 380px;
+    }
+    .content img {
+      width: 300px;
+    }
+    .container {
+      flex-direction: column;
+    }
+    .footer-container img {
+      width: 410px;
+
+      margin-top: 40px;
+    }
+  }
+
+  @media (max-width: 515px) {
+    .footer-container img {
+      width: 280px;
+    }
+  }
