@@ -8,10 +8,10 @@ export const Section = styled.section`
     justify-content: space-between;
     width: 100%;
 
-    div {
+    > div {
         max-width: 998px !important;
 
-        img {
+        > img {
             width: 500px;
         }
     }
@@ -52,42 +52,85 @@ export const Section = styled.section`
 `;
 
 export const Container = styled.div`
-
-@media (max-width: 515px) {
-        display: none;
-}
     width: 440px;
     height: 700px;
+    display: flex;
+    flex-direction: column;
+
     background-color: #FFC400;
 
     border: 0;
     border-radius: 10px;
 
+@media (max-width: 515px) {
+        display: none;
+}
+`;
 
-    div {
-        margin: 0 0 0 30px;
+export const Content = styled.div`
+    width: 400px;
+    height: auto;
 
-        img {
-            width: 380px;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
 
-            -webkit-box-shadow: 4px 3px 15px -1px rgba(0,0,0,0.75);
-            -moz-box-shadow: 4px 3px 15px -1px rgba(0,0,0,0.75);
-            box-shadow: 4px 3px 15px -1px rgba(0,0,0,0.75);
+    position: relative;
+    background: #000;
 
-            margin: 10px 0;
-        }
-
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        background-color: #000;
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        transition: all .15s ease;
     }
 
-  > p {
-        margin: 10px;
-       text-align: center;
-       font-size: 18px; 
-       color: #666;
-   }
+    &::before {
+        top: 0;
+        left: 0;
+        transform-origin: top left;
+        transform: rotate(-45deg) scale(0);
+    }
 
+    &::after {
+        right: 0;
+        bottom: 0;
+        transform-origin: bottom right;
+        transform: rotate(45deg) scale(0);
+    }
 
+    &:hover {
+        transform: translate(6px, -6px);
+    }
+
+    &:hover::before {
+        transform: rotate(-45deg) scale(1);
+    }
+
+    &:hover::after {
+        transform: rotate(45deg) scale(1);
+    }
+
+    img {
+        width: 380px;
+        height: auto;
+
+        display: block;
+        transform: translate(0, 0);
+        transition: all .15s ease;
+        position: relative;
+        z-index: 10;
+
+        &:hover {
+            transform: translate(6px, -6px);
+        }
+    }
 `;
+
 
 export const Title = styled.p `
     text-align: center;
@@ -95,24 +138,6 @@ export const Title = styled.p `
     color: #313131 !important;
     margin: 10px;
 `;
-
-export const AccessButton = styled.a `
-    display: flex;
-    width: 120px;
-    margin-left: 30px;
-    text-decoration: none;
-    align-items: center;
-    cursor: pointer;
-    
-    font-size: 12px;
-    color: #313131; 
-    
-
-    &:hover {
-        color: ${shade(0.1, '#fff')};
-        }
-
-`
 
 export const LastButton = styled.button.attrs({
     type: 'button'

@@ -5,6 +5,7 @@ import {
     Container,
     LastButton,
     Title,
+    Content,
     AccessButton,
 } from './styles';
 import { Link } from 'react-scroll';
@@ -23,22 +24,11 @@ export default function Three() {
           
         <Container>
           <Title>My latest projects</Title>
-            <div>
-              <img src={BeTheHeroLogin} alt="Login de um projeto de ajuda a ONG's" />
-              <img src={BeTheHeroRegister} alt="Pagina de registro de um projeto de ajuda a ONG's" />
-            </div>
-            <AccessButton target="_blank" rel="noopener noreferrer" href="https://github.com/lineuxyz/semana-omnistack-11">
-              <p>access repository</p>
-              <MdTrendingFlat size={20} />
-            </AccessButton>
 
-            <div>
-              <img src={DevSearch} alt="Projeto de busca de desenvolvedores" />
-            </div>
-            <AccessButton target="_blank" rel="noopener noreferrer" href="https://github.com/lineuxyz/dev-search">
-                <p>access repository</p>
-              <MdTrendingFlat size={20} />
-            </AccessButton>
+          <Content>
+            <img src={BeTheHeroLogin} />
+          </Content>
+
         </Container>
 
         <div>

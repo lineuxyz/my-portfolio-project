@@ -5,7 +5,7 @@ import GlobalStyle from './styles/global';
 import Header from './components/_Header';
 import Dashboard from './components/Dashboard';
 import Description from './components/Description';
-import Learning from './components/Learning';
+import NewLearning from './components/NewLearning';
 import Companies from './components/Companies';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
     <Header />
     <Dashboard />
     <Description />
-    <Learning />
+    <NewLearning />
     <Companies />
 
     <GlobalStyle />
