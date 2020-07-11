@@ -7,6 +7,8 @@ import Dashboard from './components/Dashboard';
 import Description from './components/Description';
 import NewLearning from './components/NewLearning';
 import Companies from './components/Companies';
+import Form from './components/Form';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
     <Description />
     <NewLearning />
     <Companies />
+    <Form />
+    <Footer />
 
     <GlobalStyle />
   </>
