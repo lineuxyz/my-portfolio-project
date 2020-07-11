@@ -1,15 +1,31 @@
 import React from 'react';
 
-import { Container, Form } from './styles';
+import { Container, Title, Description, Form, InputGroup, InputName, InputPhone } from './styles';
 
 export default function Formularie() {
   return (
-    <Container>
-      <Form>
-        <input />
-        <input />
+    <Container id="form">
+      <Title>Um titulo</Title>
+      <Description>Um subtitulo um subtitulo um subtitulo</Description>
 
-        <button>ahgwoief</button>
+      <Form>
+        <InputGroup>
+          <InputName type="text"/>
+          <InputPhone type="text"/>
+        </InputGroup>
+        <input type="text"/>
+
+        <textarea />
+
+        <InputGroup>
+          <input type="checkbox" name="" id=""/>
+          <input type="checkbox" name="" id=""/>
+          <input  type="checkbox" name="" id=""/>
+        </InputGroup>
+
+
+        <input type="checkbox" name="" id="teste"/>
+        <button type="submit">Butão</button>
       </Form>
     </Container>
   );
