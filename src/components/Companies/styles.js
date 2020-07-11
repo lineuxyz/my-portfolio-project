@@ -84,19 +84,6 @@ export const Title = styled.li `
 
     }
 `;
-
-export const Copy = styled.div`
-      display: flex;
-      justify-content: space-between;
-      padding: 15px 40px 10px 40px;
-      color: #fff;
-      font-size: 1.1rem;
-    a {
-      color: #FFC400;
-  }
-
-`;
-
 export const LastButton = styled.button.attrs({
   type: 'button'
 })`
