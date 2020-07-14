@@ -12,11 +12,11 @@ export default function Header() {
   return (
       
       <Container>
-          <Icon src={logo} />
+          {/*<Icon src={logo} />*/}
           <Menus>
             <Link to="three" smooth={true} duration={2000}>Projects</Link>
             <Link to="four" smooth={true} duration={2000}>My career</Link>
-            <Link to="form" smooth={true} duration={2000}>Talk to me</Link>
+            {/*<Link to="form" smooth={true} duration={2000}>Talk to me</Link>*/}
           </Menus>
       </Container>
   );
