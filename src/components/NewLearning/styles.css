@@ -58,7 +58,7 @@
       width: 8px;
       height: 8px;
       position: absolute;
-      transition: all .15s ease;
+      transition: all .30s ease;
     }
   
     .stream:before {
@@ -78,7 +78,7 @@
     .stream__thumbnail {
       display: block;
       transform: translate(0, 0);
-      transition: all .15s ease;
+      transition: all .30s ease;
       position: relative;
       z-index: 10;
     }
