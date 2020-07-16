@@ -1,22 +1,26 @@
 import React from 'react';
 
-import { Container, List } from './styles';
-import {MdBrightness7, MdBrightness1, MdCode} from 'react-icons/md'
+import { Container, List, Icon, IconTheme, Menus } from './styles';
+
+import StyledBurger from '../Burger';
+
+import logo from '../../assets/logo-lineu.png'
+
+
 import { Link } from 'react-scroll'
 
 
-export default function Header() {
+export default function Header({ open }) {
   return (
       
       <Container>
-          <div>
-            <MdCode size={20} />
-            <p>Lineu Pastorelli</p>
-          </div>
-          <List>
+          <Icon src={logo} />
+          <Menus open={open}>
             <Link to="three" smooth={true} duration={2000}>Projects</Link>
             <Link to="four" smooth={true} duration={2000}>My career</Link>
-          </List>
+            <Link to="form" smooth={true} duration={2000}>Talk to me</Link>
+          </Menus>
+          <StyledBurger />
       </Container>
   );
 }

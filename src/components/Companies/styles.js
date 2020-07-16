@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { shade } from 'polished';
 
 export const Footer = styled.div`
     display: flex;
@@ -83,31 +82,6 @@ export const Title = styled.li `
     font-size: 1.8rem
 
     }
-`;
-
-export const Copy = styled.div`
-      display: flex;
-      justify-content: space-between;
-      padding: 15px 40px 10px 40px;
-      color: #fff;
-      font-size: 1.1rem;
-    a {
-      color: #FFC400;
-  }
-
-`;
-
-export const LastButton = styled.button.attrs({
-  type: 'button'
-})`
-  display: flex;
-  padding: 10px 30px;
-  margin: 60px 0 60px 90px;
-  transition: background 0.2s;
-  
-  &:hover {
-      background: ${shade(0.2, '#FFC400')};
-      }
 `;
 
 
