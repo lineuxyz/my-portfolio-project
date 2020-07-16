@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Footer, List, Title, LastButton } from './styles';
-import { Link } from 'react-scroll';
+
 
 import city from '../../assets/city.png'
 
@@ -31,9 +31,7 @@ export default function Four() {
                         <ul><Title><span>Company Name:</span> Google | 2019/January to 2019/May</Title>
                         <li>Care of some open source repositories from Google, I did maintenance, corrections, conflict resolution of pull requests, this was a Google project, where there was a small contract also acting as a freelance.</li>
                         </ul>
-                    </List>
-
-                    <LastButton><Link to="first" smooth={true} duration={2000}>Click and get + 10 XP</Link></LastButton>
+                    </List> 
             </div>
     </Footer>
 
