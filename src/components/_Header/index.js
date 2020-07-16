@@ -20,7 +20,6 @@ export default function Header({ open }) {
             <Link to="four" smooth={true} duration={2000}>My career</Link>
             <Link to="form" smooth={true} duration={2000}>Talk to me</Link>
           </Menus>
-          <StyledBurger />
       </Container>
   );
 }
