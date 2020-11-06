@@ -24,7 +24,7 @@ export default function Formularie() {
       <Title>Contact me</Title>
       <Description>Here you can hire for some type of project. Tell me your information and describe the project that I will answer, I promise.</Description>
 
-      <Form onSubmit={handleNewIncident} name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <Form method="POST" onSubmit={handleNewIncident} name="contact" netlify netlify-honeypot="bot-field" hidden>
         <input type="hidden" name="form-name" value="contact"/>
         <InputGroup>
           <InputName type="text" placeholder="Name"/>
