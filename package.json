@@ -7,7 +7,7 @@
     "express": "^4.17.1",
     "express-favicon": "^2.0.1",
     "file-loader": "^6.0.0",
-    "gatsby": "^2.21.1",
+    "gatsby": "^4.25.7",
     "gatsby-plugin-offline": "^3.2.0",
     "gatsby-plugin-react-helmet": "^3.3.0",
     "gatsby-plugin-styled-components": "^3.3.0",
